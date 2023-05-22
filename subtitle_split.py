@@ -36,7 +36,7 @@ def write_english_subtitles(subtitles_dict, output_file):
 def process_filename(filename):
     # Generate Chinese and English output filenames
     basename, ext = os.path.splitext(filename)
-    return basename + "_chinese" + ext, basename + "_english" + ext
+    return f"{basename}_chinese{ext}", f"{basename}_english{ext}"
 
 def process_files():
     # Create output directories if they don't exist
